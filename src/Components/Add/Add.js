@@ -55,7 +55,7 @@ const Add = () => {
                         </div>
 
                         <div className="form-group">
-                            <input type="text" placeholder="Email" className="form-control mt-4"  value={email} onChange={e => setEmail(e.target.value)}/>
+                            <input type="email" placeholder="Email" className="form-control mt-4"  value={email} onChange={e => setEmail(e.target.value)}/>
                         </div>
 
                         <div className="form-group">
