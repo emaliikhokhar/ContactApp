@@ -45,8 +45,6 @@ const Edit = () => {
             email,
             number
         }
-        console.log(data)
-
         dispatch({type: "UPDATE_CONTACT", payload: data})
         toast.success("Contact updated successfully!")
         history.push("/");
