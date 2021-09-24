@@ -29,14 +29,14 @@ const Edit = () => {
         const checkNumber = contacts.find(contact => contact.id !== parseInt(id) && contact.number === number && number);
         
         if(!email || !name || !number) {
-            toast.warning("Please fill all the fields")
+            return toast.warning("Please fill all the fields")
         }
         if(checkEmail) {
-            toast.error("Email exists already!")
+            return toast.error("Email exists already!")
         }
         
         if(checkNumber) {
-            toast.error("Contact number exists already!")
+            return toast.error("Contact number exists already!")
         }
 
         const data = {
